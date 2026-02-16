@@ -34,7 +34,8 @@ skywings-airlines/
 
 ## Author
 Vivian Wanjiku  
-GitHub: https://github.com/vividorpass-sketch.github.io/Aviation/
+## Live link
+https://vividorpass-sketch.github.io/Aviation/
 
 
 
