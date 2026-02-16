@@ -32,5 +32,9 @@ skywings-airlines/
 ├── images/             # (Optional) Local images folder
 │   └── (place images here if not using URLs)
 
+## Author
+Vivian Wanjiku  
+GitHub: https://github.com/vividorpass-sketch/Aviation
+
 
 
