@@ -1,0 +1,224 @@
+body {
+    background-color: antiquewhite;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ .logo {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+        }
+
+          
+           nav a {
+            text-decoration: none;
+            color: #0c2461;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+         nav a:hover {
+            background-color: #0c2461;
+            color: white;
+            
+        }
+        
+        nav a.active {
+            background-color: #0c2461;
+            color: white;
+        }
+
+         nav ul {
+         display: flex;
+         list-style: none;
+         gap: 30px;
+     }
+
+        
+        .destinations {
+            display: grid;
+            grid-template-columns: minmax(250px, 1fr);
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+        
+        .destination-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            
+            position: relative;
+        }
+        
+        .destination-card:hover {
+           
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .destination-image {
+            height: 500px;
+            overflow: hidden;
+        }
+        
+        .destination-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           
+        }
+        
+            
+    
+        .destination-info {
+            padding: 20px;
+            background: white;
+        }
+        
+        .destination-info h3 {
+            color: #0c2461;
+            margin-bottom: 10px;
+        }
+        
+        .testimonials {
+            display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+        
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            position: relative;
+            border-left: 5px solid #e74c3c;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #0c2461;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .author-info h4 {
+            color: #0c2461;
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            background: #0c2461;
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #e74c3c;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-section a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: left;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background: #e74c3c;
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .intro-section {
+                flex-direction: column;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
