@@ -137,3 +137,18 @@ function clearBookings() {
 }
 
 document.getElementById("clearHistory").addEventListener("click", clearBookings);
+
+function confirmBooking() {
+    const current = JSON.parse(localStorage.getItem("currentBooking"));
+    let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+
+    bookings.push(current);
+    localStorage.setItem("bookings", JSON.stringify(bookings));
+
+    alert("Booking complete!");
+
+    clearForm();     
+    showStep(1);     
+}
+
+
